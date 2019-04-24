@@ -1,6 +1,8 @@
 # Set the environment to "test"
+require_relative './set_up_test_database'
 
 ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
 
 # Bring in the contents of the `app.rb` file
 
