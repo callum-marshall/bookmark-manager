@@ -25,3 +25,12 @@ feature 'viewing bookmarks' do
     expect(page).to have_content "http://www.deliveroo.com"
   end
 end
+
+feature 'adding bookmarks' do
+  scenario 'can add a website to bookmarks' do
+    visit ('/')
+    fill_in :add_bookmark, with: 'Google'
+    click_button "add"
+    expect(page).to have_content "Google"
+end
+end
