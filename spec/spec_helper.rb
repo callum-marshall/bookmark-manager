@@ -19,6 +19,7 @@ require(File.join(File.dirname(__FILE__), '..', 'app.rb'))
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'pg'
 
 # Tell Capybara to talk to BookmarkManager
 

@@ -1,17 +1,19 @@
-#Bookmark-Manager
+# Bookmark Manager Challenge
+
+## Makers Academy - Week 4
+
+User Story 1
+```
+As a lazy user
+So that I can quickly navigate to websites I like
+I would like to be able to view a list of bookmarks
+```
+![domain model - user story 1](https://raw.githubusercontent.com/makersacademy/course/master/bookmark_manager/images/bookmark_manager_1.png?token=ALFYAMQUTKZX2RII64ICLBK4ZBFQK)
 
 
-# Bookmark Manager
+### To set up the database
 
-An exemplar of the Bookmark Manager application, with sensible commits.
-
-Connect to psql
-Create the database using the psql command CREATE DATABASE bookmark_manager;
-Connect to the database using the pqsl command \c bookmark_manager;
-Run the query we have saved in the file 01_create_bookmarks_table.sql
-
-DATABASE BASICS
-
-CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
-
-To set up a test database, let's run psql and create a database, and use the SQL query saved in db/migrations/01_create_bookmarks_table.sql to create a bookmarks table.
+1. Connect to psql
+2. Create the databases using the psql command CREATE DATABASE `bookmark_manager` and `bookmark_manager_test`
+3. Connect to the databases using the pqsl command \c;
+4. Run the SQL scripts we have saved in `db/migrations` in the given order.
